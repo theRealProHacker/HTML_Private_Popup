@@ -1,1 +1,67 @@
+<!--DocType HTML-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Popup</title>
+        <link rel="icon" href="https://tse4.mm.bing.net/th?id=OIP.20KYq029BMnpojlVM6AQggHaHa&pid=Api" type="image/png">
+        <style>
+            #fullPop{
+                width:100%;
+                height:100%;
+                position:fixed;
+                display:none;
+                background:transparent;
+                z-index: 2;
+            }
+            #smallPop{
+                position: absolute;
+                width:80%;
+                height:80%;
+                left:10%;
+                bottom: 10%;
+                display:none;
+                background-color: lightslategray;
+                border:1px solid black;
+                border-radius:3px;
 
+            }
+            .formDiv{
+                position: relative;
+                width:fit-content;
+                margin:auto;
+            }
+            .course1{
+                position:absolute;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="course1">
+            <button id="buttonPop">
+                Press Hier
+            </button>
+        </div>
+            
+        <div id="fullPop">
+            <div id="smallPop">
+                <div class="formDiv">
+                    Name:
+                    <input type="text">
+                    E-Mail:
+                    <input type="email">
+                    Course:
+                    <input type="text">
+                    Date:
+                    <input type="date" value="2021-08-12">
+                    <input type="submit">
+                </div>
+                <button id="closeButton" style="position:absolute; bottom:5px">Close</button>
+            </div>
+        </div>
+            
+    </body>
+    <script src="main.js"></script>
+</html>
